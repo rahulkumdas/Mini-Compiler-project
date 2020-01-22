@@ -1,2 +1,3 @@
 # Mini-Compiler-project
-This repo contain all the analysis phases of compiler implemented in c.
+- Codes pertaining to projects for Compiler Design Lab for Course CO351 - Compiler Design Lab
+
