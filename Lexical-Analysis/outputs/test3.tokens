@@ -1,0 +1,148 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ char |   KEYWORD                          |
+ s   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 10   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ "Welcome!!"   |    STRING CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ char |   KEYWORD                          |
+ s   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ "Welcome!!"   |    STRING CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ {   |    OPENING BRACES                  |
+ 1   |    NUMBER CONSTANT                 |
+ ,   |   COMMA DELIMITER                  |
+ 2   |    NUMBER CONSTANT                 |
+ }   |    CLOSING BRACES                  |
+ ;   |    SEMICOLON DELIMITER             |
+ char |   KEYWORD                          |
+ S   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 20   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ p  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ if |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ s   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 0   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ==   |    OPERATOR                        |
+ 'W'   |    Character CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ if |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ s   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 1   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ==   |    OPERATOR                        |
+ 'e'   |    Character CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ if |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ s   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ==   |    OPERATOR                        |
+ 'l'   |    Character CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Welcome!!"   |    STRING CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ else |   KEYWORD                          |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Bug1\n"   |    STRING CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ else |   KEYWORD                          |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Bug2\n"   |    STRING CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ else |   KEYWORD                          |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Bug3\n"   |    STRING CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+
+// int @<-_-= 2;   |    SINGLE LINE COMMENT               
+
+
+//This test case contains nested conditional statement,Array and print statement   |    SINGLE LINE COMMENT               
+
+
+//Also there is an error in declaring integer variable which does not match any regular expression.   |    SINGLE LINE COMMENT               
+
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  S	|	IDENTIFIER
+  a	|	IDENTIFIER
+  p	|	   IDENTIFIER
+  s	|	IDENTIFIER
+  char	|	KEYWORD
+  if	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  else	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "Bug3\n"	|	STRING CONSTANT
+  "Bug2\n"	|	STRING CONSTANT
+  "Bug1\n"	|	STRING CONSTANT
+  'W'	|	Character CONSTANT
+  "Welcome!!"	|	STRING CONSTANT
+  'e'	|	Character CONSTANT
+  'l'	|	Character CONSTANT
+  10	|	   NUMBER CONSTANT
+  20	|	   NUMBER CONSTANT
+  0	|	   NUMBER CONSTANT
+  1	|	   NUMBER CONSTANT
+  2	|	   NUMBER CONSTANT
+

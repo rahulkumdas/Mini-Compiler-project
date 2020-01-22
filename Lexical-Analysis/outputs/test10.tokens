@@ -1,0 +1,208 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+
+//modifiers   |    SINGLE LINE COMMENT               
+
+
+//arithmetic operation   |    SINGLE LINE COMMENT               
+
+
+//logical operations   |    SINGLE LINE COMMENT               
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ long |   KEYWORD                          |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ unsigned |   KEYWORD                          |
+ long |   KEYWORD                          |
+ int |   KEYWORD                          |
+ x  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ signed |   KEYWORD                          |
+ short |   KEYWORD                          |
+ int |   KEYWORD                          |
+ y  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ signed |   KEYWORD                          |
+ short |   KEYWORD                          |
+ z  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ w  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 23   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ b  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 15   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ -   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ /   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ %   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ >=   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ <=   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ ==   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ !=   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  unsigned	|	KEYWORD
+  a	|	   IDENTIFIER
+  b	|	   IDENTIFIER
+  c	|	   IDENTIFIER
+  long	|	KEYWORD
+  w	|	   IDENTIFIER
+  x	|	   IDENTIFIER
+  y	|	   IDENTIFIER
+  z	|	   IDENTIFIER
+  signed	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  short	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "%d"	|	STRING CONSTANT
+  15	|	   NUMBER CONSTANT
+  23	|	   NUMBER CONSTANT
+

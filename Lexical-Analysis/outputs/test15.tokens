@@ -1,0 +1,33 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include <stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ i  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 10   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  i	|	   IDENTIFIER
+  int	|	KEYWORD
+  main	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  10	|	   NUMBER CONSTANT
+

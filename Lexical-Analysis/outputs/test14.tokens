@@ -1,0 +1,33 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+
+// Implicit Error that our Language doesn't support   |    SINGLE LINE COMMENT               
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ char |   KEYWORD                          |
+ERROR at line no. 11
+@
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  char	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+

@@ -1,0 +1,150 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ struct |   KEYWORD                          |
+ pair  |     IDENTIFIER                      |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ fun  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ int |   KEYWORD                          |
+ x  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ return |   KEYWORD                          |
+ x  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ x  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 2   |    NUMBER CONSTANT                 |
+ ,   |   COMMA DELIMITER                  |
+ b  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ c  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ d  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ e  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ f  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ g  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ h  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ d  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ e  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ /   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ f  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ %   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ g  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ &&   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ h  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ ||   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ h  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ h  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ h  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ fun  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+
+//This Test case contains operator,structure,delimeters,Function;   |    SINGLE LINE COMMENT               
+
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  struct	|	KEYWORD
+  a	|	   IDENTIFIER
+  b	|	   IDENTIFIER
+  c	|	   IDENTIFIER
+  d	|	   IDENTIFIER
+  e	|	   IDENTIFIER
+  f	|	   IDENTIFIER
+  g	|	   IDENTIFIER
+  h	|	   IDENTIFIER
+  x	|	   IDENTIFIER
+  fun	|	   IDENTIFIER
+  return	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  pair	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  2	|	   NUMBER CONSTANT
+

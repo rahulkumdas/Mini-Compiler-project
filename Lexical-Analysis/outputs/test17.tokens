@@ -1,0 +1,27 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+#define A 10   |    Macro                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 5   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  int	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  5	|	   NUMBER CONSTANT
+

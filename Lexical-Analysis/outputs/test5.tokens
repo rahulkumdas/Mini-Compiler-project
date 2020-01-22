@@ -1,0 +1,106 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 5   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ while |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ >   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Hello world"   |    STRING CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 4   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ while |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ >   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ b  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ b  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 4   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ while |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ b  |     IDENTIFIER                      |
+ >   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ b  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ }   |    CLOSING BRACES                  |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  b	|	   IDENTIFIER
+  int	|	KEYWORD
+  main	|	KEYWORD
+  printf	|	   IDENTIFIER
+  while	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "Hello world"	|	STRING CONSTANT
+  "%d"	|	STRING CONSTANT
+  0	|	   NUMBER CONSTANT
+  4	|	   NUMBER CONSTANT
+  5	|	   NUMBER CONSTANT
+

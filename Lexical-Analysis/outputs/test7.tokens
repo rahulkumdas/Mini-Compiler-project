@@ -1,0 +1,83 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ square  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ return |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+/*struct abc
+{
+	int a;
+	char b;
+};*/   |    MULTI LINE COMMENT                   |
+
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ num  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 2   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ num2  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ square  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ num  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "Square of %d is %d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ num  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ num2  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ return |   KEYWORD                          |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  num	|	   IDENTIFIER
+  square	|	   IDENTIFIER
+  return	|	KEYWORD
+  int	|	KEYWORD
+  num2	|	   IDENTIFIER
+  main	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "Square of %d is %d"	|	STRING CONSTANT
+  0	|	   NUMBER CONSTANT
+  2	|	   NUMBER CONSTANT
+

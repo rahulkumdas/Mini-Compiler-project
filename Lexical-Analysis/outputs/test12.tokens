@@ -1,0 +1,90 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+
+//for loop   |    SINGLE LINE COMMENT               
+
+
+//continue   |    SINGLE LINE COMMENT               
+
+
+//while loop   |    SINGLE LINE COMMENT               
+
+
+//do while loop   |    SINGLE LINE COMMENT               
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ for |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ <   |    OPERATOR                        |
+ 10   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ )   |    CLOSING BRACKETS	         |
+ continue |   KEYWORD                          |
+ ;   |    SEMICOLON DELIMITER             |
+ while |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ >   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ a  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ do |   KEYWORD                          |
+ {   |    OPENING BRACES                  |
+ a  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ while |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ <   |    OPERATOR                        |
+ 10   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  for	|	KEYWORD
+  continue	|	KEYWORD
+  do	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  while	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  10	|	   NUMBER CONSTANT
+  0	|	   NUMBER CONSTANT
+

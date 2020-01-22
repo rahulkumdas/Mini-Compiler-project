@@ -1,0 +1,84 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+
+//Program to add 2 numbers and increment by 1   |    SINGLE LINE COMMENT               
+
+ int |   KEYWORD                          |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 3   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ {   |    OPENING BRACES                  |
+ 1   |    NUMBER CONSTANT                 |
+ ,   |   COMMA DELIMITER                  |
+ 2   |    NUMBER CONSTANT                 |
+ }   |    CLOSING BRACES                  |
+ ;   |    SEMICOLON DELIMITER             |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 1   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ +   |    OPERATOR                        |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ;   |    SEMICOLON DELIMITER             |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ a   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ 2   |    NUMBER CONSTANT                 |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ return |   KEYWORD                          |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	IDENTIFIER
+  return	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "%d"	|	STRING CONSTANT
+  0	|	   NUMBER CONSTANT
+  1	|	   NUMBER CONSTANT
+  2	|	   NUMBER CONSTANT
+  3	|	   NUMBER CONSTANT
+

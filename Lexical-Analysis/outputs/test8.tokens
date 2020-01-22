@@ -1,0 +1,79 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+#define NUM 5   |    Macro                  |
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ char |   KEYWORD                          |
+ A   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ "#define MAX 10"   |    STRING CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ char |   KEYWORD                          |
+ B   |    ARRAY IDENTIFIER |
+ [   |    SQUARE OPENING BRACKETS            |
+ ]   |    SQUARE CLOSING BRACKETS            |
+ =   |    OPERATOR                        |
+ "Hello"   |    STRING CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ char |   KEYWORD                          |
+ ch  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 'B'   |    Character CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ unsigned |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 1   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "String = %s Value of Pi = %f"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ A  |     IDENTIFIER                      |
+ ,   |   COMMA DELIMITER                  |
+ 3.14   |    Floating CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ return |   KEYWORD                          |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  A	|	IDENTIFIER
+  B	|	IDENTIFIER
+  unsigned	|	KEYWORD
+  a	|	   IDENTIFIER
+  char	|	KEYWORD
+  ch	|	   IDENTIFIER
+  return	|	KEYWORD
+  int	|	KEYWORD
+  main	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  'B'	|	Character CONSTANT
+  "#define MAX 10"	|	STRING CONSTANT
+  "Hello"	|	STRING CONSTANT
+  "String = %s Value of Pi = %f"	|	STRING CONSTANT
+  3.14	|	   Floating CONSTANT
+  0	|	   NUMBER CONSTANT
+  1	|	   NUMBER CONSTANT
+

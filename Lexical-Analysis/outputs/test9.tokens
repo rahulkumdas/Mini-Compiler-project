@@ -1,0 +1,92 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ struct |   KEYWORD                          |
+ student  |     IDENTIFIER                      |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ rollNum  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ marks  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ student1  |     IDENTIFIER                      |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 1   |    NUMBER CONSTANT                 |
+ ,   |   COMMA DELIMITER                  |
+ b  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 0   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ student1  |     IDENTIFIER                      |
+ .   |    DOT DELIMITER			 |
+ rollNum  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 1   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ student1  |     IDENTIFIER                      |
+ .   |    DOT DELIMITER			 |
+ marks  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 90   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ if |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ >=   |    OPERATOR                        |
+ 1   |    NUMBER CONSTANT                 |
+ &&   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ <=   |    OPERATOR                        |
+ 10   |    NUMBER CONSTANT                 |
+ )   |    CLOSING BRACKETS	         |
+ b  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ else |   KEYWORD                          |
+ {   |    OPENING BRACES                  |
+ b  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ERR_UNMATCHED_COMMENT at line no. 41
+/
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  struct	|	KEYWORD
+  a	|	   IDENTIFIER
+  b	|	   IDENTIFIER
+  if	|	KEYWORD
+  int	|	KEYWORD
+  student	|	   IDENTIFIER
+  main	|	KEYWORD
+  else	|	KEYWORD
+  rollNum	|	   IDENTIFIER
+  marks	|	   IDENTIFIER
+  student1	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  10	|	   NUMBER CONSTANT
+  90	|	   NUMBER CONSTANT
+  0	|	   NUMBER CONSTANT
+  1	|	   NUMBER CONSTANT
+

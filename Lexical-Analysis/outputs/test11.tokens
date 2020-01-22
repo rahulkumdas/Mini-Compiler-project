@@ -1,0 +1,126 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+
+//if-else   |    SINGLE LINE COMMENT               
+
+
+//switch-case   |    SINGLE LINE COMMENT               
+
+
+//++ operator, -- operator   |    SINGLE LINE COMMENT               
+
+
+//return   |    SINGLE LINE COMMENT               
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ char |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 'm'   |    Character CONSTANT |
+ ;   |    SEMICOLON DELIMITER             |
+ if |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ ==   |    OPERATOR                        |
+ 'm'   |    Character CONSTANT |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ return |   KEYWORD                          |
+ 1   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ else |   KEYWORD                          |
+ {   |    OPENING BRACES                  |
+ a  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ switch |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ case |   KEYWORD                          |
+ 'l'   |    Character CONSTANT |
+ :   |    COLON DELIMITER            |
+ a  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ break |   KEYWORD                          |
+ ;   |    SEMICOLON DELIMITER             |
+ case |   KEYWORD                          |
+ 'm'   |    Character CONSTANT |
+ :   |    COLON DELIMITER            |
+ a  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ break |   KEYWORD                          |
+ ;   |    SEMICOLON DELIMITER             |
+ case |   KEYWORD                          |
+ 'n'   |    Character CONSTANT |
+ :   |    COLON DELIMITER            |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ 2   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ break |   KEYWORD                          |
+ ;   |    SEMICOLON DELIMITER             |
+ default |   KEYWORD                          |
+ :   |    COLON DELIMITER            |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ 3   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%c"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  char	|	KEYWORD
+  return	|	KEYWORD
+  if	|	KEYWORD
+  int	|	KEYWORD
+  break	|	KEYWORD
+  main	|	KEYWORD
+  case	|	KEYWORD
+  default	|	KEYWORD
+  else	|	KEYWORD
+  printf	|	   IDENTIFIER
+  switch	|	KEYWORD
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "%c"	|	STRING CONSTANT
+  'l'	|	Character CONSTANT
+  'm'	|	Character CONSTANT
+  'n'	|	Character CONSTANT
+  1	|	   NUMBER CONSTANT
+  2	|	   NUMBER CONSTANT
+  3	|	   NUMBER CONSTANT
+

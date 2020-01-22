@@ -1,0 +1,86 @@
+              ====================================================================
+                             Lexical Analyzer for the C Language
+              ====================================================================
+
+ #include<stdio.h>   |    Pre Processor directive                 
+ int |   KEYWORD                          |
+ main |   KEYWORD                          |
+ (   |    OPENING BRACKETS                |
+ )   |    CLOSING BRACKETS	         |
+ {   |    OPENING BRACES                  |
+ int |   KEYWORD                          |
+ a  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 2   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ printf  |     IDENTIFIER                      |
+ (   |    OPENING BRACKETS                |
+ "%d"   |    STRING CONSTANT |
+ ,   |   COMMA DELIMITER                  |
+ a  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ ++   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ b  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 4   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 3   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ b  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 8   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ c  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ 3   |    NUMBER CONSTANT                 |
+ ;   |    SEMICOLON DELIMITER             |
+ int |   KEYWORD                          |
+ d  |     IDENTIFIER                      |
+ =   |    OPERATOR                        |
+ c  |     IDENTIFIER                      |
+ *   |    OPERATOR                        |
+ (   |    OPENING BRACKETS                |
+ a  |     IDENTIFIER                      |
+ +   |    OPERATOR                        |
+ b  |     IDENTIFIER                      |
+ )   |    CLOSING BRACKETS	         |
+ ;   |    SEMICOLON DELIMITER             |
+ a  |     IDENTIFIER                      |
+ --   |    OPERATOR                        |
+ ;   |    SEMICOLON DELIMITER             |
+ }   |    CLOSING BRACES                  |
+
+
+
+  ============================
+         SYMBOL TABLE
+  ============================
+
+  a	|	   IDENTIFIER
+  b	|	   IDENTIFIER
+  c	|	   IDENTIFIER
+  d	|	   IDENTIFIER
+  int	|	KEYWORD
+  main	|	KEYWORD
+  printf	|	   IDENTIFIER
+
+
+
+  ===============================
+         CONSTANT TABLE
+  ===============================
+  "%d"	|	STRING CONSTANT
+  2	|	   NUMBER CONSTANT
+  3	|	   NUMBER CONSTANT
+  4	|	   NUMBER CONSTANT
+  8	|	   NUMBER CONSTANT
+
